@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DonateWithUs</string>
+
+    <!--    Activity Main-->
+
+    <!--    Login Activity -->
+    <string name="str_login_emailAddress_hint">Enter Email</string>
+    <string name="str_login_password_hint">Enter Password</string>
+    <string name="str_login_loginBtn">Login</string>
+    <string name="str_login_imageDescription">Login Banner Image</string>
+    <string name="str_login_registerText">Don\'t have an account? Register</string>
+
+</resources>
