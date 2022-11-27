@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_design"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingStart="20dp"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:text="@string/str_register_et_TitleText"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/banner_image_2"
+        android:contentDescription="@string/str_register_imageDescription"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginTop="2dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_circle_secondary"
+            android:id="@+id/register_btn_userRegButton"
+            android:text="@string/str_register_userReg_btn"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_circle_primary"
+            android:id="@+id/register_btn_clubRegButton"
+            android:textAllCaps="false"
+            android:text="@string/str_register_clubReg_btn"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
