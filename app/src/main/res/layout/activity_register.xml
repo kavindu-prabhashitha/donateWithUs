@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/background_design"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".RegisterActivity"
     android:orientation="vertical">
 
@@ -39,23 +39,26 @@
         <Button
             android:layout_marginTop="2dp"
             android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
             android:layout_gravity="center"
-            android:background="@drawable/button_circle_secondary"
             android:id="@+id/register_btn_userRegButton"
+            android:background="@drawable/button_corner_radius"
             android:text="@string/str_register_userReg_btn"
             android:textAllCaps="false"
             android:textSize="20sp"
+
             />
 
         <Button
             android:layout_marginTop="10dp"
             android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_corner_radius"
             android:layout_gravity="center"
-            android:background="@drawable/button_circle_primary"
             android:id="@+id/register_btn_clubRegButton"
             android:textAllCaps="false"
+            android:padding="10dp"
             android:text="@string/str_register_clubReg_btn"
             android:textSize="20sp"
             />
