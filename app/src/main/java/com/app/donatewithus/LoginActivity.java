@@ -13,7 +13,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCanceledListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -23,8 +22,9 @@ public class LoginActivity extends AppCompatActivity {
 
     Button loginBtn;
     TextView registerTextView;
-    EditText userEmailInput;
-    EditText userPasswordInput;
+    EditText userEmail;
+    EditText userPassword;
+
 
     private FirebaseAuth mAuth;
     private ProgressDialog loader;
@@ -37,8 +37,8 @@ public class LoginActivity extends AppCompatActivity {
 
         loginBtn = findViewById(R.id.login_btn_loginButton);
         registerTextView = findViewById(R.id.loginPageQuestion);
-        userEmailInput = findViewById(R.id.login_user_email_input);
-        userPasswordInput = findViewById(R.id.login_user_password_input);
+        userEmail = findViewById(R.id.login_user_email_input);
+        userPassword = findViewById(R.id.login_user_password_input);
 
         mAuth =FirebaseAuth.getInstance();
         loader = new ProgressDialog(this);
@@ -55,16 +55,16 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String email = userEmailInput.getText().toString().trim();
-                String password = userPasswordInput.getText().toString().trim();
+                String email = userEmail.getText().toString().trim();
+                String password = userPassword.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)){
-                    userEmailInput.setError("Email is required");
+                    userEmail.setError("Email is required");
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)){
-                    userPasswordInput.setError("Password is required");
+                    userPassword.setError("Password is required");
                     return;
                 }
 
